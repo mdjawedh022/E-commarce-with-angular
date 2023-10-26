@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/fashion.png" alt="Myntra Logo" />
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search for products..." />
+    <button>Search</button>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">Kids</a></li>
+    <li><a href="#">Cart</a></li>
+    <li><a href="#">Sign Up</a></li>
+  
+  </ul>
+  <div class="toggle" *ngIf="isMobileMenuVisible">
+    <div class="header-sidebar">
+        <div class="logo">
+            <img src="assets/fashion.png" alt="Myntra Logo" />
+          </div>
+          <h3 (click)="toggleMobileMenu()">X</h3>
+    </div>
+    <ul class="link-menu">
+        <li class="side-input"><input type="text"/><button>search</button></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Sign Up</a></li>
+   
+    </ul>
+  </div>
+  <div class="hamburger-menu" (click)="toggleMobileMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</nav>
