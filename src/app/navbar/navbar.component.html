@@ -15,26 +15,29 @@
     <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i></a></li>
   
   </ul>
-  <div class="toggle" *ngIf="isMobileMenuVisible">
-    <div class="header-sidebar">
-        <div class="logo">
-            <img src="assets/fashion.png" alt="Myntra Logo" />
-          </div>
-          <h3 (click)="toggleMobileMenu()">X</h3>
-    </div>
-    <ul class="link-menu">
-        <li class="side-input"><input type="text"/><button>search</button></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">Kids</a></li>
-      <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-    <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-   
-    </ul>
-  </div>
+ 
   <div class="hamburger-menu" (click)="toggleMobileMenu()">
     <div class="bar"></div>
     <div class="bar"></div>
     <div class="bar"></div>
   </div>
 </nav>
+<div class="toggle" *ngIf="isMobileMenuVisible">
+  <div class="inner-toggle">
+  <div class="header-sidebar">
+      <div class="logo">
+          <img src="assets/fashion.png" alt="Myntra Logo" />
+        </div>
+        <h3 (click)="toggleMobileMenu()">X</h3>
+  </div>
+  <ul class="link-menu">
+      <li class="side-input"><input type="text"/><button>search</button></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">Kids</a></li>
+    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+  <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+ 
+  </ul>
+</div>
+</div>
