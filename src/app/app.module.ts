@@ -8,6 +8,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TrendingitemComponent } from './trendingitem/trendingitem.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TrendingitemComponent } from './trendingitem/trendingitem.component';
     NavbarComponent,
     LandingPageComponent,
     CarouselComponent,
-    TrendingitemComponent
+    TrendingitemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
