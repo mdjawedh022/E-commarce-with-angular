@@ -9,6 +9,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TrendingitemComponent } from './trendingitem/trendingitem.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MensComponent } from './mens/mens.component';
+import { WomenComponent } from './women/women.component';
+import { KidsComponent } from './kids/kids.component';
 
 
 @NgModule({
@@ -18,12 +22,16 @@ import { FooterComponent } from './footer/footer.component';
     LandingPageComponent,
     CarouselComponent,
     TrendingitemComponent,
-    FooterComponent
+    FooterComponent,
+    MensComponent,
+    WomenComponent,
+    KidsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

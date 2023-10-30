@@ -1,0 +1,45 @@
+<div class="main">
+    <div class="sidebar">
+      <h2>Filter by</h2>
+      <ul>
+        <li><input type="checkbox" /> <span>Shirt</span></li>
+        <li><input type="checkbox" /> <span>T-Shirt</span></li>
+        <li><input type="checkbox" /> <span>Trousers</span></li>
+        <li><input type="checkbox" /> <span>short</span></li>
+        <li><input type="checkbox" /> <span>Jeans</span></li>
+        <li><input type="checkbox" /> <span>Jacket</span></li>
+        <li><input type="checkbox" /> <span>Pants</span></li>
+        <li><input type="checkbox" /> <span>Hoodie</span></li>
+        <li><input type="checkbox" /> <span>Sweatshirt</span></li>
+      </ul>
+      <hr />
+      <h2>Sort by Price</h2>
+      <ul>
+        <li><input type="radio" /> Low To High</li>
+        <li><input type="radio" /> High To Low</li>
+      </ul>
+      <hr />
+      <h2>Sort by Best Discount</h2>
+      <ul>
+        <li><input type="radio" /> Low To High</li>
+        <li><input type="radio" /> High To Low</li>
+      </ul>
+    </div>
+    <!-- ---------------------- -->
+    <div class="product-container">
+      <div *ngFor="let item of kidsData"  class="product">
+        <div>
+          <img [src]="item.image" alt="{{ item.name }}" />
+        </div>
+          <h2>{{ item.name }}</h2>
+          <p>{{ item.text }}</p>
+         <div class="price-discount">
+          <p>₹{{ item.price }}</p>
+          <p class="dis_p"> ₹{{ item.disc_price }}</p>
+          <p class="off">({{ item.price_off }})</p>
+         </div>
+      <button type="button" class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
