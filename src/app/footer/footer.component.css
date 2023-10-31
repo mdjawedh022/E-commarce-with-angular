@@ -48,10 +48,10 @@
   text-align: center;
   margin-top: 1rem;
 }
-.fa-brands:hover{
-    background-color: #fff;
-    color: #333;
-  }
+.fa-brands:hover {
+  background-color: #fff;
+  color: #333;
+}
 @media screen and (max-width: 1050px) {
   .footer-section h3 {
     font-size: 1.3rem;
@@ -60,7 +60,7 @@
   .footer-section p {
     margin-left: 1.9rem;
     color: #d4d3d3;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .footer-section a {
     text-decoration: none;
@@ -72,47 +72,46 @@
   .fa-brands {
     font-size: 1rem;
   }
-
 }
 
 @media screen and (max-width: 850px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .footer-section h3 {
-        font-size: 1.1rem;
-        margin-left: 1.9rem;
-      }
-      .footer-section p {
-        margin-left: 1.9rem;
-        color: #d4d3d3;
-        font-size:.8rem;
-      }
-      .footer-section a {
-        text-decoration: none;
-        color: #d4d3d3;
-        font-size: .8rem;
-      }
-      .social-media {
-        width:40%;
-      }
-      .fa-brands {
-        font-size: .8rem;
-      }
-    .info-footer p{
-font-size: .8rem;
-    }
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin-left: 1.9rem;
+  }
+  .footer-section p {
+    margin-left: 1.9rem;
+    color: #d4d3d3;
+    font-size: 0.8rem;
+  }
+  .footer-section a {
+    text-decoration: none;
+    color: #d4d3d3;
+    font-size: 0.8rem;
+  }
+  .social-media {
+    width: 40%;
+  }
+  .fa-brands {
+    font-size: 0.8rem;
+  }
+  .info-footer p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 350px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-      }
-      .social-media {
-        width:50%;
-      }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .social-media {
+    width: 50%;
+  }
 }

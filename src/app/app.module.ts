@@ -13,6 +13,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MensComponent } from './mens/mens.component';
 import { WomenComponent } from './women/women.component';
 import { KidsComponent } from './kids/kids.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { CartComponent } from './cart/cart.component';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { KidsComponent } from './kids/kids.component';
     FooterComponent,
     MensComponent,
     WomenComponent,
-    KidsComponent
+    KidsComponent,
+    LoginComponent,
+    SignupComponent,
+    CartComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
