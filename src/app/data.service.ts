@@ -12,13 +12,13 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   getMenData() {
-    return this.http.get(`${this.baseUrl}/men`);
+    return this.http.get(`${this.baseUrl}/data?for=men`);
   }
 
   getWomenData(){
-    return this.http.get(`${this.baseUrl}/women`);
+    return this.http.get(`${this.baseUrl}/data?for=women`);
   }
   getKidsData(){
-    return this.http.get(`${this.baseUrl}/kids`);
+    return this.http.get(`${this.baseUrl}/data?for=kids`);
   }
 }

@@ -17,6 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { CartComponent } from './cart/cart.component';
 import { DetailsComponent } from './details/details.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,13 +35,15 @@ import { DetailsComponent } from './details/details.component';
     LoginComponent,
     SignupComponent,
     CartComponent,
-    DetailsComponent
+    DetailsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
     HttpClientModule,
+     FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

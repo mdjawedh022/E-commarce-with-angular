@@ -1,417 +1,501 @@
 {
-  "men": [
+  "data": [
     {
       "id": 1,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230321/5zvc/6418f0f6aeb26924e3d6ea93/-473Wx593H-465699829-green-MODEL2.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230321/5zvc/6418f0f6aeb26924e3d6ea93/-473Wx593H-465699829-green-MODEL2.jpg",
       "name": "EYEBOGLER",
-      "text":"Colourblock Half-Zip T-Shirt",
+      "text": "Colourblock Half-Zip T-Shirt",
       "price": 299,
-      "disc_price":1299,
-      "price_off":"77% OFF"
+      "disc_price": 1299,
+      "price_off": "77% OFF",
+      "cat": "T-Shirt",
+      "for": "men"
     },
-  {
-      "id":2,   
-      "image":"https://assets.ajio.com/medias/sys_master/root/20220601/hpVk/62976010f997dd03e2596933/-473Wx593H-441145396-black-MODEL.jpg",
+    {
+      "id": 2,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20220601/hpVk/62976010f997dd03e2596933/-473Wx593H-441145396-black-MODEL.jpg",
       "name": "DNMX",
-      "text":"Lightly Washed Skinny Fit Jeans",
+      "text": "Lightly Washed Skinny Fit Jeans",
       "price": 441,
-      "disc_price":899 ,
-      "price_off":"51% OFF"
+      "disc_price": 899,
+      "price_off": "51% OFF",
+      "cat": "Jeans",
+      "for": "men"
     },
     {
       "id": 3,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230908/rqBz/64faccbcafa4cf41f5d255f4/-473Wx593H-466549497-white-MODEL.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230908/rqBz/64faccbcafa4cf41f5d255f4/-473Wx593H-466549497-white-MODEL.jpg",
       "name": "CLAFOUTIS",
-      "text":"Typographic Print V-Neck T-Shirt",
+      "text": "Typographic Print V-Neck T-Shirt",
       "price": 510,
-      "disc_price":1499,
-      "price_off":"66% OFF"
-    }
-    ,  {
+      "disc_price": 1499,
+      "price_off": "66% OFF",
+      "cat": "T-Shirt",
+      "for": "men"
+    },
+    {
       "id": 4,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231011/SLxM/65268c04afa4cf41f53afe45/-473Wx593H-469288565-black-MODEL3.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231011/SLxM/65268c04afa4cf41f53afe45/-473Wx593H-469288565-black-MODEL3.jpg",
       "name": "FORT COLLINS",
-      "text":"Zip-Front Puffer Jacket with Detachable Hood",
+      "text": "Zip-Front Puffer Jacket with Detachable Hood",
       "price": 1418,
-      "disc_price":2325,
-      "price_off":"39% OFF"
-    }
+      "disc_price": 2325,
+      "price_off": "39% OFF",
+      "cat": "Jacket",
+      "for": "men"
+    },
 
-    , {
+    {
       "id": 5,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231010/473a/65252731ddf77915192fcbd1/-473Wx593H-466691165-black-MODEL2.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231010/473a/65252731ddf77915192fcbd1/-473Wx593H-466691165-black-MODEL2.jpg",
       "name": "URBAN BUCCACHI",
-      "text":"Men Relaxed Fit Shirt with Short Sleeves",
+      "text": "Men Relaxed Fit Shirt with Short Sleeves",
       "price": 380,
-      "disc_price":1999,
-      "price_off":"81% OFF"
-    },  {
+      "disc_price": 1999,
+      "price_off": "81% OFF",
+      "cat": "Shirt",
+      "for": "men"
+    },
+    {
       "id": 6,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230912/HJjz/64ff7327afa4cf41f5d99510/-473Wx593H-466562849-grey-MODEL.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230912/HJjz/64ff7327afa4cf41f5d99510/-473Wx593H-466562849-grey-MODEL.jpg",
       "name": "BENE KLEED",
-      "text":"Straight Fit Flat-Front Cargo Pants",
+      "text": "Straight Fit Flat-Front Cargo Pants",
       "price": 1507,
-      "disc_price":2599,
-      "price_off":"42% OFF"
-    }
-    ,
+      "disc_price": 2599,
+      "price_off": "42% OFF",
+      "cat": "Pants",
+      "for": "men"
+    },
     {
       "id": 7,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20221007/FtiO/634015bff997ddfdbd0db917/-473Wx593H-443002264-stone-MODEL.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221007/FtiO/634015bff997ddfdbd0db917/-473Wx593H-443002264-stone-MODEL.jpg",
       "name": "NETPLAY",
-      "text":"Tapered Fit Trousers with Insert Pockets",
+      "text": "Tapered Fit Trousers with Insert Pockets",
       "price": 480,
-      "disc_price":1599,
-      "price_off":"70% OFF"
-    }
-    , {
+      "disc_price": 1599,
+      "price_off": "70% OFF",
+      "cat": "Trousers",
+      "for": "men"
+    },
+    {
       "id": 8,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230831/6CCN/64f0b1a7ddf77915198e0cf2/-473Wx593H-442111513-navy-MODEL.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230831/6CCN/64f0b1a7ddf77915198e0cf2/-473Wx593H-442111513-navy-MODEL.jpg",
       "name": "GAP",
-      "text":"Men Logo Print Regular Fit Hoodie",
-      "price":3599,
-      "disc_price":3999,
-      "price_off":"10% OFF"
-    }
-    ,{ 
+      "text": "Men Logo Print Regular Fit Hoodie",
+      "price": 3599,
+      "disc_price": 3999,
+      "price_off": "10% OFF",
+      "cat": "Hoodie",
+      "for": "men"
+    },
+    {
       "id": 9,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230908/rqBz/64faccbcafa4cf41f5d255f4/-473Wx593H-466549497-white-MODEL.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230908/rqBz/64faccbcafa4cf41f5d255f4/-473Wx593H-466549497-white-MODEL.jpg",
       "name": "CLAFOUTIS",
-      "text":"Typographic Print V-Neck T-Shirt",
+      "text": "Typographic Print V-Neck T-Shirt",
       "price": 510,
-      "disc_price":1499,
-      "price_off":"66% OFF"
-    }
-    , {
+      "disc_price": 1499,
+      "price_off": "66% OFF",
+      "cat": "T-Shirt",
+      "for": "men"
+    },
+    {
       "id": 10,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231010/HgiJ/65253820ddf77915192ff036/-473Wx593H-442271592-grey-MODEL.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231010/HgiJ/65253820ddf77915192ff036/-473Wx593H-442271592-grey-MODEL.jpg",
       "name": "GAP",
-      "text":"Cotton Puffer Jacket with Flap Pockets",
+      "text": "Cotton Puffer Jacket with Flap Pockets",
       "price": 5399,
-      "disc_price":5999,
-      "price_off":"10% OFF"
-    }
-    , {
-      "id":11,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230906/6IuS/64f8c2abafa4cf41f5c8074b/-473Wx593H-443017562-purple-MODEL.jpg",
+      "disc_price": 5999,
+      "price_off": "10% OFF",
+      "cat": "Jacket",
+      "for": "men"
+    },
+    {
+      "id": 11,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230906/6IuS/64f8c2abafa4cf41f5c8074b/-473Wx593H-443017562-purple-MODEL.jpg",
       "name": "NETPLAY",
-      "text":"Placement Logo Embroidered Regular Fit Sweatshirt",
+      "text": "Placement Logo Embroidered Regular Fit Sweatshirt",
       "price": 899,
-      "disc_price":999,
-      "price_off":"10% OFF"
-    }
-    , {
+      "disc_price": 999,
+      "price_off": "10% OFF",
+      "cat": "Sweatshirt",
+      "for": "men"
+    },
+    {
       "id": 12,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20221114/Sl6j/63721947f997ddfdbd704ab8/-473Wx593H-443002296-darkblue-MODEL.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221114/Sl6j/63721947f997ddfdbd704ab8/-473Wx593H-443002296-darkblue-MODEL.jpg",
       "name": "JOHN PLAYERS JEANS",
-      "text":"Mid-Wash Slim Fit Jeans",
+      "text": "Mid-Wash Slim Fit Jeans",
       "price": 750,
-      "disc_price":1499,
-      "price_off":"50% OFF"
-    }
-    , {
+      "disc_price": 1499,
+      "price_off": "50% OFF",
+      "cat": "Jeans",
+      "for": "men"
+    },
+    {
       "id": 13,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20221107/dBC4/63691691aeb269659c758740/-473Wx593H-441149387-navy-MODEL5.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221107/dBC4/63691691aeb269659c758740/-473Wx593H-441149387-navy-MODEL5.jpg",
       "name": "NETPLAY",
-      "text":"Checked Shirt with Patch Pocket",
-      "price":390,
-      "disc_price":1299,
-      "price_off":"70% OFF"
-    }
-    , {
+      "text": "Checked Shirt with Patch Pocket",
+      "price": 390,
+      "disc_price": 1299,
+      "price_off": "70% OFF",
+      "cat": "Shirt",
+      "for": "men"
+    },
+    {
       "id": 14,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230911/jXBw/64ff40baddf7791519cb85c2/-473Wx593H-466504632-teal-MODEL2.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230911/jXBw/64ff40baddf7791519cb85c2/-473Wx593H-466504632-teal-MODEL2.jpg",
       "name": "STELLERS",
-      "text":"Graphic Print Crew-Neck T-Shirt",
+      "text": "Graphic Print Crew-Neck T-Shirt",
       "price": 600,
-      "disc_price":2999,
-      "price_off":"75% OFF"
-    }
-    , {
+      "disc_price": 2999,
+      "price_off": "75% OFF",
+      "cat": "T-Shirt",
+      "for": "men"
+    },
+    {
       "id": 15,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230130/2abT/63d79f90f997dd708e29ac3e/-473Wx593H-443001126-olive-MODEL5.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230130/2abT/63d79f90f997dd708e29ac3e/-473Wx593H-443001126-olive-MODEL5.jpg",
       "name": "NETPLAY",
-      "text":"Tapered Fit Trousers with Slip Pockets",
+      "text": "Tapered Fit Trousers with Slip Pockets",
       "price": 450,
-      "disc_price":1499,
-      "price_off":"70% OFF"
-    }
-     
-  ],
-  "women": [
-    {
-      "id": 1,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230809/Ol1b/64d3af43a9b42d15c99e8c3e/-473Wx593H-420437843-teal-MODEL2.jpg",
-      "name": "AABTA",
-      "text":"Foil Print A-Line Kurta",
-      "price":240,
-      "disc_price":799 ,
-      "price_off":"70% OFF"
+      "disc_price": 1499,
+      "price_off": "70% OFF",
+      "cat": "Trousers",
+      "for": "men"
     },
-  {
-      "id":2,   
-      "image":"https://assets.ajio.com/medias/sys_master/root/20210119/HpL5/6006d895aeb269698150e833/-473Wx593H-460796882-black-MODEL3.jpg",
+    {
+      "id": 16,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230809/Ol1b/64d3af43a9b42d15c99e8c3e/-473Wx593H-420437843-teal-MODEL2.jpg",
+      "name": "AABTA",
+      "text": "Foil Print A-Line Kurta",
+      "price": 240,
+      "disc_price": 799,
+      "price_off": "70% OFF",
+      "cat": "Kurta",
+      "for": "women"
+    },
+    {
+      "id": 17,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20210119/HpL5/6006d895aeb269698150e833/-473Wx593H-460796882-black-MODEL3.jpg",
       "name": "SAKURA",
-      "text":"Palazzos with Drawstring Waistband",
+      "text": "Palazzos with Drawstring Waistband",
       "price": 279,
-      "disc_price":899,
-      "price_off":"69% OFF"
+      "disc_price": 899,
+      "price_off": "69% OFF",
+      "cat": "Palazzos",
+      "for": "women"
     },
     {
-      "id": 3,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230723/QGYJ/64bc7fe4eebac147fc833f5a/-473Wx593H-466364813-cream-MODEL.jpg",
+      "id": 18,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230723/QGYJ/64bc7fe4eebac147fc833f5a/-473Wx593H-466364813-cream-MODEL.jpg",
       "name": "WILORI",
-      "text":"Kanjeevaram Woven Saree with Floral Border",
-      "price":1020,
-      "disc_price":2999,
-      "price_off":"66% OFF"
-    }
-    ,  {
-      "id": 4,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20221209/TuYM/6393639df997ddfdbdcac1d4/-473Wx593H-443001993-beige-MODEL.jpg",
+      "text": "Kanjeevaram Woven Saree with Floral Border",
+      "price": 1020,
+      "disc_price": 2999,
+      "price_off": "66% OFF",
+      "cat": "Saree"
+    },
+    {
+      "id": 19,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221209/TuYM/6393639df997ddfdbdcac1d4/-473Wx593H-443001993-beige-MODEL.jpg",
       "name": "AVAASA MIX N' MATCH",
-      "text":"Embellished Dupatta with Tassels",
-      "price":280,
-      "disc_price":699,
-      "price_off":"60% OFF"
-    }
+      "text": "Embellished Dupatta with Tassels",
+      "price": 280,
+      "disc_price": 699,
+      "price_off": "60% OFF",
+      "cat": "Dupatta",
+      "for": "women"
+    },
 
-    , {
-      "id": 5,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20221123/Line/637dbef6f997ddfdbd9298fc/-473Wx593H-441149930-teal-MODEL.jpg",
+    {
+      "id": 20,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221123/Line/637dbef6f997ddfdbd9298fc/-473Wx593H-441149930-teal-MODEL.jpg",
       "name": "AVAASA MIX N' MATCH",
-      "text":"Foil Print Flared Kurta with Waist Tie-Up",
+      "text": "Foil Print Flared Kurta with Waist Tie-Up",
       "price": 800,
-      "disc_price":1999 ,
-      "price_off":"60% OFF"
-    },  {
-      "id": 6,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231006/dosN/651f1323ddf779151922b878/-473Wx593H-466676220-maroon-MODEL.jpg",
+      "disc_price": 1999,
+      "price_off": "60% OFF",
+      "cat": "Kurta",
+      "for": "women"
+    },
+    {
+      "id": 21,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231006/dosN/651f1323ddf779151922b878/-473Wx593H-466676220-maroon-MODEL.jpg",
       "name": "SOCH",
-      "text":"Embellished V-Neck Blouse",
+      "text": "Embellished V-Neck Blouse",
       "price": 2638,
-      "disc_price":2998,
-      "price_off":"15% OFF"
-    }
-    ,
+      "disc_price": 2998,
+      "price_off": "15% OFF",
+      "cat": "Blouse",
+      "for": "women"
+    },
     {
-      "id": 7,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230629/iwUi/649d3e00eebac147fc3f8b15/-473Wx593H-466318638-blue-MODEL.jpg",
+      "id": 22,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230629/iwUi/649d3e00eebac147fc3f8b15/-473Wx593H-466318638-blue-MODEL.jpg",
       "name": "KEDAR FAB",
-      "text":"Floral Embroidery Saree",
-      "price":1320,
-      "disc_price":2999,
-      "price_off":"56% OFF"
-    }
-    , {
-      "id": 8,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20220711/HUkT/62cc481daeb26921af70c040/-473Wx593H-441140843-navy-MODEL.jpg",
+      "text": "Floral Embroidery Saree",
+      "price": 1320,
+      "disc_price": 2999,
+      "price_off": "56% OFF",
+      "cat": "Saree",
+      "for": "women"
+    },
+    {
+      "id": 23,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20220711/HUkT/62cc481daeb26921af70c040/-473Wx593H-441140843-navy-MODEL.jpg",
       "name": "FUSION",
-      "text":"Printed Flared Skirt with Elasticated Waist",
-      "price":390,
-      "disc_price":1299,
-      "price_off":"70% OFF"
-    }
-    , {
-      "id": 9,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230329/IQcu/64242d88711cf97ba7f9c733/-473Wx593H-469444697-multi-MODEL.jpg",
+      "text": "Printed Flared Skirt with Elasticated Waist",
+      "price": 390,
+      "disc_price": 1299,
+      "price_off": "70% OFF",
+      "cat": "Skirt",
+      "for": "women"
+    },
+    {
+      "id": 24,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230329/IQcu/64242d88711cf97ba7f9c733/-473Wx593H-469444697-multi-MODEL.jpg",
       "name": "INDIE PICKS",
-      "text":"Handblock Print Kalamkari Cotton Dupatta",
-      "price":455,
-      "disc_price":1299,
-      "price_off":"65% OFF"
-    }
-    , {
-      "id": 10,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230929/X851/6516b559ddf77915190df717/-473Wx593H-466442217-mustard-MODEL.jpg",
+      "text": "Handblock Print Kalamkari Cotton Dupatta",
+      "price": 455,
+      "disc_price": 1299,
+      "price_off": "65% OFF",
+      "cat": "Dupatta",
+      "for": "women"
+    },
+    {
+      "id": 25,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230929/X851/6516b559ddf77915190df717/-473Wx593H-466442217-mustard-MODEL.jpg",
       "name": "WUXI",
-      "text":"Floral Relaxed Fit Palazzos",
+      "text": "Floral Relaxed Fit Palazzos",
       "price": 735,
-      "disc_price":3499,
-      "price_off":"79% OFF"
-    }
-    , {
-      "id":11,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20210405/oXo1/606bccb6f997dd7b649f8e1e/-473Wx593H-461813701-red-MODEL.jpg",
+      "disc_price": 3499,
+      "price_off": "79% OFF",
+      "cat": "Palazzos",
+      "for": "women"
+    },
+    {
+      "id": 26,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20210405/oXo1/606bccb6f997dd7b649f8e1e/-473Wx593H-461813701-red-MODEL.jpg",
       "name": "MODA CHALES",
-      "text":"Zari Work Velvet Shawl",
-      "price":2550,
-      "disc_price":4250,
-      "price_off":"40% OFF"
-    }
-    , {
-      "id": 12,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20220624/wfsh/62b5d1aef997dd03e29da956/-473Wx593H-464541180-grey-MODEL.jpg",
+      "text": "Zari Work Velvet Shawl",
+      "price": 2550,
+      "disc_price": 4250,
+      "price_off": "40% OFF",
+      "cat": "Shawl",
+      "for": "women"
+    },
+    {
+      "id": 27,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20220624/wfsh/62b5d1aef997dd03e29da956/-473Wx593H-464541180-grey-MODEL.jpg",
       "name": "SUTA",
-      "text":"Embroidered Round Neck Blouse",
+      "text": "Embroidered Round Neck Blouse",
       "price": 3055,
-      "disc_price":3250,
-      "price_off":"6% OFF"
-    }
-    , {
-      "id": 13,
-      "image":"https://assets.ajio.com/medias/sys_master/root/h75/h1f/9483560288286/-473Wx593H-440585116-turquoise-MODEL4.jpg",
+      "disc_price": 3250,
+      "price_off": "6% OFF",
+      "cat": "Blouse",
+      "for": "women"
+    },
+    {
+      "id": 28,
+      "image": "https://assets.ajio.com/medias/sys_master/root/h75/h1f/9483560288286/-473Wx593H-440585116-turquoise-MODEL4.jpg",
       "name": "AVAASA MIX N' MATCH",
-      "text":"Churidar Leggings with Elasticated Waistband",
-      "price":200,
-      "disc_price":399,
-      "price_off":"50% OFF"
-    }
-    , {
-      "id": 14,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230626/RXLa/64999446eebac147fc08eb54/-473Wx593H-466306801-magenta-MODEL.jpg",
+      "text": "Churidar Leggings with Elasticated Waistband",
+      "price": 200,
+      "disc_price": 399,
+      "price_off": "50% OFF",
+      "cat": "Leggings",
+      "for": "women"
+    },
+    {
+      "id": 29,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230626/RXLa/64999446eebac147fc08eb54/-473Wx593H-466306801-magenta-MODEL.jpg",
       "name": "NEUDIS",
-      "text":"Floral Print Flared Polyester Skirt",
-      "price":882,
-      "disc_price":4199,
-      "price_off":"79% OFF"
-    }
-    , {
-      "id": 15,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230216/6IuQ/63ee493af997dde6f4abd6e6/-473Wx593H-420432880-beige-MODEL.jpg",
+      "text": "Floral Print Flared Polyester Skirt",
+      "price": 882,
+      "disc_price": 4199,
+      "price_off": "79% OFF",
+      "cat": "Skirt",
+      "for": "women"
+    },
+    {
+      "id": 30,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230216/6IuQ/63ee493af997dde6f4abd6e6/-473Wx593H-420432880-beige-MODEL.jpg",
       "name": "AABTA",
-      "text":"Jaquard Knit Winter Shawls",
-      "price":240,
-      "disc_price":799,
-      "price_off":"70% OFF"
-    }
-  ],
-  "kids": [
+      "text": "Jaquard Knit Winter Shawls",
+      "price": 240,
+      "disc_price": 799,
+      "price_off": "70% OFF",
+      "cat": "Shawl",
+      "for": "women"
+    },
     {
-      "id": 1,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231004/QgAU/651d4cd4afa4cf41f52449c1/-473Wx593H-420417362-blue-MODEL.jpg",
+      "id": 31,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231004/QgAU/651d4cd4afa4cf41f52449c1/-473Wx593H-420417362-blue-MODEL.jpg",
       "name": "BOY CODE",
-      "text":"Mid-Wash Straight Fit Jeans",
+      "text": "Mid-Wash Straight Fit Jeans",
       "price": 210,
-      "disc_price":699,
-      "price_off":"70% OFF"
+      "disc_price": 699,
+      "price_off": "70% OFF",
+      "cat": "Jeans",
+      "for": "kids"
     },
-  {
-      "id":2,   
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230802/qxYD/64c9f328eebac147fc9fb0ba/-473Wx593H-465824664-multi-MODEL.jpg",
+    {
+      "id": 32,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230802/qxYD/64c9f328eebac147fc9fb0ba/-473Wx593H-465824664-multi-MODEL.jpg",
       "name": "TRAMPOLINE",
-      "text":"Boys Typographic Print Joggers with Drawstring Waist",
-      "price":697,
-      "disc_price":1885 ,
-      "price_off":"63% OFF"
+      "text": "Boys Typographic Print Joggers with Drawstring Waist",
+      "price": 697,
+      "disc_price": 1885,
+      "price_off": "63% OFF",
+      "cat": "Joggers",
+      "for": "kids"
     },
     {
-      "id": 3,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231023/AmMU/65366067afa4cf41f559e725/-473Wx593H-420453519-lgtpink-MODEL.jpg",
+      "id": 33,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231023/AmMU/65366067afa4cf41f559e725/-473Wx593H-420453519-lgtpink-MODEL.jpg",
       "name": "KIDDERZ",
-      "text":"Girls Embellished Layered Tulle Dress",
-      "price":240,
-      "disc_price":799,
-      "price_off":"70% OFF"
-    }
-    ,  {
-      "id": 4,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230901/Uybs/64f1cd35ddf77915198f6c51/-473Wx593H-442252676-blue-MODEL.jpg",
-      "name": "GAP KIDS",
-      "text":"Zip-Front Brand Print Hoodie",
-      "price": 1799,
-      "disc_price":1999,
-      "price_off":"10% OFF"
-    }
-
-    , {
-      "id": 5,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230303/4Kjk/6401ce2faeb26924e3a2ee8b/-473Wx593H-443009859-pink-MODEL.jpg",
-      "name": "KG FRENDZ",
-      "text":"Leggings with Elasticated Waist",
-      "price": 169,
-      "disc_price":199,
-      "price_off":"15% OFF"
-    },  {
-      "id": 6,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20221209/l1O2/639364fcf997ddfdbdcaca9b/-473Wx593H-443001287-mediumblue-MODEL.jpg",
-      "name": "KG FRENDZ",
-      "text":"Lightly Washed Floral Embroidered Jeans",
-      "price":400,
-      "disc_price":999,
-      "price_off":"60% OFF"
-    }
-    ,
+      "text": "Girls Embellished Layered Tulle Dress",
+      "price": 240,
+      "disc_price": 799,
+      "price_off": "70% OFF",
+      "cat": "Dress",
+      "for": "kids"
+    },
     {
-      "id": 7,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230516/m2bu/6462a7b142f9e729d789f50e/-473Wx593H-466155833-orange-MODEL.jpg",
-      "name": "TIOR",
-      "text":"Striped Fit & Flare Dress with Bow Accent",
-      "price": 525,
-      "disc_price":1499,
-      "price_off":"65% OFF"
-    }
-    , {
-      "id": 8,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20221122/QRAT/637ce8c0aeb269659ca6d508/-473Wx593H-441704789-blue-MODEL.jpg",
-      "name": "POINT COVE",
-      "text":"Washed Straight Skirt",
-      "price":320,
-      "disc_price":799,
-      "price_off":"60% OFF"
-    }
-    , {
-      "id": 9,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230807/WlRz/64d0f537a9b42d15c992c8bb/-473Wx593H-466428019-multi-MODEL.jpg",
-      "name": "KUCHIPOO",
-      "text":"Pack of 5 Printed Round Neck T-Shirts",
-      "price":667,
-      "disc_price":2299,
-      "price_off":"71% OFF"
-    }
-    , {
-      "id": 10,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230901/JC5A/64f1cd9fafa4cf41f59c9a49/-473Wx593H-442252679-black-MODEL.jpg",
+      "id": 34,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230901/Uybs/64f1cd35ddf77915198f6c51/-473Wx593H-442252676-blue-MODEL.jpg",
       "name": "GAP KIDS",
-      "text":"Brand Print Hoodie",
-      "price":1799,
-      "disc_price":1999,
-      "price_off":"10% OFF"
-    }
-    , {
-      "id":11,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230724/e41v/64be3b1beebac147fc83c225/-473Wx593H-466380561-multi-MODEL8.jpg",
+      "text": "Zip-Front Brand Print Hoodie",
+      "price": 1799,
+      "disc_price": 1999,
+      "price_off": "10% OFF",
+      "cat": "Hoodie",
+      "for": "kids"
+    },
+
+    {
+      "id": 35,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230303/4Kjk/6401ce2faeb26924e3a2ee8b/-473Wx593H-443009859-pink-MODEL.jpg",
+      "name": "KG FRENDZ",
+      "text": "Leggings with Elasticated Waist",
+      "price": 169,
+      "disc_price": 199,
+      "price_off": "15% OFF",
+      "cat": "Leggings",
+      "for": "kids"
+    },
+    {
+      "id": 36,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221209/l1O2/639364fcf997ddfdbdcaca9b/-473Wx593H-443001287-mediumblue-MODEL.jpg",
+      "name": "KG FRENDZ",
+      "text": "Lightly Washed Floral Embroidered Jeans",
+      "price": 400,
+      "disc_price": 999,
+      "price_off": "60% OFF",
+      "cat": "Jeans",
+      "for": "kids"
+    },
+    {
+      "id": 37,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230516/m2bu/6462a7b142f9e729d789f50e/-473Wx593H-466155833-orange-MODEL.jpg",
+      "name": "TIOR",
+      "text": "Striped Fit & Flare Dress with Bow Accent",
+      "price": 525,
+      "disc_price": 1499,
+      "price_off": "65% OFF",
+      "cat": "Dress",
+      "for": "kids"
+    },
+    {
+      "id": 38,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221122/QRAT/637ce8c0aeb269659ca6d508/-473Wx593H-441704789-blue-MODEL.jpg",
+      "name": "POINT COVE",
+      "text": "Washed Straight Skirt",
+      "price": 320,
+      "disc_price": 799,
+      "price_off": "60% OFF",
+      "cat": "Skirt",
+      "for": "kids"
+    },
+    {
+      "id": 39,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230807/WlRz/64d0f537a9b42d15c992c8bb/-473Wx593H-466428019-multi-MODEL.jpg",
+      "name": "KUCHIPOO",
+      "text": "Pack of 5 Printed Round Neck T-Shirts",
+      "price": 667,
+      "disc_price": 2299,
+      "price_off": "71% OFF",
+      "cat": "T-Shirt",
+      "for": "kids"
+    },
+    {
+      "id": 40,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230901/JC5A/64f1cd9fafa4cf41f59c9a49/-473Wx593H-442252679-black-MODEL.jpg",
+      "name": "GAP KIDS",
+      "text": "Brand Print Hoodie",
+      "price": 1799,
+      "disc_price": 1999,
+      "price_off": "10% OFF",
+      "cat": "Hoodie",
+      "for": "kids"
+    },
+    {
+      "id": 41,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230724/e41v/64be3b1beebac147fc83c225/-473Wx593H-466380561-multi-MODEL8.jpg",
       "name": "INDIWEAVES",
-      "text":"Pack of 3 Floral Print Leggings",
-      "price":675,
-      "disc_price":1349,
-      "price_off":"50% OFF"
-    }
-    , {
-      "id": 12,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231023/UmCu/65365f04ddf779151953978b/-473Wx593H-420436422-pink-MODEL.jpg",
+      "text": "Pack of 3 Floral Print Leggings",
+      "price": 675,
+      "disc_price": 1349,
+      "price_off": "50% OFF",
+      "cat": "Leggings",
+      "for": "kids"
+    },
+    {
+      "id": 42,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231023/UmCu/65365f04ddf779151953978b/-473Wx593H-420436422-pink-MODEL.jpg",
       "name": "ANTIX",
-      "text":"Printed Regular Fit Top & Pant Set",
+      "text": "Printed Regular Fit Top & Pant Set",
       "price": 165,
-      "disc_price":549,
-      "price_off":"70% OFF"
-    }
-    , {
-      "id": 13,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230726/NgDu/64c12fd5a9b42d15c9705d3d/-473Wx593H-443019074-blue-MODEL.jpg",
+      "disc_price": 549,
+      "price_off": "70% OFF",
+      "cat": "Pants",
+      "for": "kids"
+    },
+    {
+      "id": 43,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230726/NgDu/64c12fd5a9b42d15c9705d3d/-473Wx593H-443019074-blue-MODEL.jpg",
       "name": "RIO GIRLS",
-      "text":"Embroidered Denim Skirt with Frayed Hems",
-      "price":629,
-      "disc_price":699,
-      "price_off":"10% OFF"
-    }
-    , {
-      "id": 14,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20230502/84om/6451303f42f9e729d76241cf/-473Wx593H-420446062-skyblue-MODEL.jpg",
+      "text": "Embroidered Denim Skirt with Frayed Hems",
+      "price": 629,
+      "disc_price": 699,
+      "price_off": "10% OFF",
+      "cat": "Skirt",
+      "for": "kids"
+    },
+    {
+      "id": 44,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230502/84om/6451303f42f9e729d76241cf/-473Wx593H-420446062-skyblue-MODEL.jpg",
       "name": "FLOUNCE",
-      "text":"Graphic Print Crew-Neck T-Shirt",
-      "price":99,
-      "disc_price":329,
-      "price_off":"70% OFF"
-    }
-    , {
-      "id": 15,
-      "image":"https://assets.ajio.com/medias/sys_master/root/20231023/Kzkd/65365f74afa4cf41f559e25d/-473Wx593H-420436425-navy-MODEL.jpg",
+      "text": "Graphic Print Crew-Neck T-Shirt",
+      "price": 99,
+      "disc_price": 329,
+      "price_off": "70% OFF",
+      "cat": "T-Shirt",
+      "for": "kids"
+    },
+    {
+      "id": 45,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231023/Kzkd/65365f74afa4cf41f559e25d/-473Wx593H-420436425-navy-MODEL.jpg",
       "name": "ANTIX",
-      "text":"Unicorn Print Top & Pants Set",
+      "text": "Unicorn Print Top & Pants Set",
       "price": 450,
-      "disc_price":549,
-      "price_off":"70% OFF"
+      "disc_price": 549,
+      "price_off": "70% OFF",
+      "cat": "Pants",
+      "for": "kids"
     }
   ],
 
