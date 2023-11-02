@@ -6,6 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
+  getProductDetails(productId: string) {
+    throw new Error('Method not implemented.');
+  }
 
   private baseUrl = `http://localhost:3000`; 
 
@@ -20,5 +23,9 @@ export class DataService {
   }
   getKidsData(){
     return this.http.get(`${this.baseUrl}/data?for=kids`);
+  }
+
+  getAllProducts(){
+    return this.http.get(`${this.baseUrl}/data`)
   }
 }

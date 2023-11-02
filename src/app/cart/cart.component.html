@@ -1,19 +1,27 @@
-<div class="container">
-
-    <div class="product-data">
-  <div class="img-div">
-    <img src="https://assets.ajio.com/medias/sys_master/root/20230808/9x9d/64d2474aeebac147fcb45b0a/-473Wx593H-466434087-white-MODEL.jpg" alt="">
+<div class="containers">
+  <div class="data-show">
+    <div class="product-data" *ngFor="let item of cartData">
+      <div class="img-div">
+        <img [src]="item.image" alt="">
+      </div>
+      <div class="title">
+        <h4>{{item.name}}</h4>
+        <p>{{item.text}}</p>
+      </div>
+      <p>₹{{item.price}}</p>
+      <button class="del-btn btn btn-danger" (click)="deleteItem(item)">Delete</button>
+    </div>
+    <!-- Conditionally show "Empty Cart" message -->
+    <div *ngIf="cartData.length === 0" class="empty-cart-message">
+      Your cart is empty.
+    </div>
   </div>
-  <div class="title"><h4>NETPLAY</h4>
-<p>Colourblock Half-Zip T-Shirt</p>
-</div>
-<p>₹324</p>
-<button>Delete</button>
-    </div>
+
+
     <div class="price-show">
-        <h4>Product price:-<span>₹324</span></h4>
-        <h4>Discount Price:- <span>₹554</span></h4>
-        <h4>Total Price:- <span>₹324</span></h4>
-          <button>Checkout</button>
-    </div>
+      <h4>Product price:- <span>₹{{ totalProductPrice }}</span></h4>
+      <h4>Discount Price:- <span>₹{{ totalDiscountPrice }}</span></h4>
+      <h4>Total Price:- <span>₹{{totalProductPrice}}</span></h4>
+      <button (click)="checkout()">Checkout</button>
+</div>
 </div>

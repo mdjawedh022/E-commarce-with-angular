@@ -1,25 +1,37 @@
-.container{
+.containers{
+    width: 80%;
     display: flex;
     align-items: flex-start;
     margin-top: 7rem;
-    height: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5rem;
     gap: 20px;
 
 }
-/* .product-data div{
-    border:1px solid red;
-} */
-.product-data{
+.data-show{
+    /* border:1px soid red; */
     width: 79%;
+   
+}
+ /* div{
+    border:1px solid red;
+}   */
+.product-data{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     align-items: center;
-    gap: 100px;
-    height: 200px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-between;
+    flex-direction: row;
     padding: 1rem;
     border-radius: 5px;
+    margin-top: .5rem;
+    gap: 20px;
 }
+/* .product-data div{
+    border: solid ;
+} */
 .img-div{
     width: 20%;
     height:190px;
@@ -29,7 +41,12 @@
     height: 100%;
     border-radius: 5px;
 }
-
+.del-btn{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    border: 1px solid red;
+}
 .price-show{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 1.5rem;
@@ -52,3 +69,71 @@
     font-weight: 600;
     margin-top: 1rem;
 }
+@media screen  and (max-width:1050px) {
+   
+   .containers{
+    width: 85%;
+   }
+    .data-show{
+        width:70%;
+       
+    }
+    .price-show{
+        width: 27%;
+    }
+    .img-div{
+        width: 20%;
+        height:120px;
+    }
+    .price-show h4{
+        font-size: 1.2rem;
+    }
+}
+@media screen  and (max-width:850px) {
+   
+    .containers{
+     width: 85%;
+     display: flex;
+     flex-direction: column;
+    }
+     .data-show{
+         width:100%;
+        
+     }
+     .price-show{
+         width: 100%;
+     }
+     .img-div{
+         width: 20%;
+         height:120px;
+     }
+     .price-show h4{
+         font-size: 1.2rem;
+     }
+ }
+ @media screen  and (max-width:450px) {
+   
+    .containers{
+     width: 85%;
+     display: flex;
+     flex-direction: column;
+    }
+     .data-show{
+         width:100%;
+        
+     }
+     .price-show{
+         width: 100%;
+     }
+.product-data{
+display: flex;
+flex-direction: column;
+}
+     .img-div{
+         width: 100%;
+         height:160px;
+     }
+     .price-show h4{
+         font-size: 1.2rem;
+     }
+ }

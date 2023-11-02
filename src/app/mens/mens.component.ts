@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { Router } from '@angular/router';
+import { CartService } from '../cart.service';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-mens',
@@ -8,45 +12,47 @@ import { DataService } from '../data.service';
 })
 export class MensComponent implements OnInit {
   menData: Array<{
-    id: number,
-    image:string,
-    name:string,
-    text:string,
-    price:number,
-    disc_price:number,
-    price_off:number ,
-    cat:string,
-    for:string
-  }>=[];
+    id: number;
+    image: string;
+    name: string;
+    text: string;
+    price: number;
+    disc_price: number;
+    price_off: number;
+    cat: string;
+    for: string;
+  }> = [];
   filteredData: Array<{
-    id: number,
-    image:string,
-    name:string,
-    text:string,
-    price:number,
-    disc_price:number,
-    price_off:number ,
-    cat:string,
-    for:string
-  }>=[];
+    id: number;
+    image: string;
+    name: string;
+    text: string;
+    price: number;
+    disc_price: number;
+    price_off: number;
+    cat: string;
+    for: string;
+  }> = [];
   selectedCategories: Set<string> = new Set();
 
-  selectedSort: string = 'lowToHighPrice'; 
+  selectedSort: string = 'lowToHighPrice';
 
+  constructor(
+    private dataService: DataService,
+    private router: Router,
+    private cartService: CartService,
 
-  
-  constructor(private dataService: DataService) {}
+  ) {}
 
   ngOnInit() {
     this.loadData();
   }
 
   loadData() {
-    this.dataService.getMenData().subscribe((data:any) => {
+    this.dataService.getMenData().subscribe((data: any) => {
       this.menData = data;
       this.filteredData = data; // Initialize with all products
       this.sortProducts(); // Sort products on load
-    
     });
     console.log(this.menData);
   }
@@ -67,8 +73,7 @@ export class MensComponent implements OnInit {
         this.selectedCategories.delete('All');
       }
     }
-   
- 
+
     this.applyCategoryFilter();
   }
 
@@ -88,7 +93,6 @@ export class MensComponent implements OnInit {
     });
   }
 
-
   sortProducts() {
     if (this.selectedSort === 'lowToHighPrice') {
       this.filteredData.sort((a, b) => a.price - b.price);
@@ -97,9 +101,31 @@ export class MensComponent implements OnInit {
     } else if (this.selectedSort === 'lowToHighDiscount') {
       this.filteredData.sort((a, b) => a.disc_price - b.disc_price);
     } else if (this.selectedSort === 'highToLowDiscount') {
-      this.filteredData.sort((a, b) => b.disc_price- a.disc_price);
+      this.filteredData.sort((a, b) => b.disc_price - a.disc_price);
     }
   }
 
+  // Navigate to the product detail page with the product ID as a parameter
+  navigateToProductDetail(productId: number) {
+    this.router.navigate(['/product', productId]);
+  }
+
+  // add to cart
+  addToCart(item: any) {
+    const data = item; // Replace with your data
+    this.cartService.postToCart(data).subscribe(
+      (response) => {
+        console.log('POST request successful', response);
+        alert('Item added to the cart!');
+        // Handle the response from the server
+      },
+      (error) => {
+        console.error('POST request failed', error);
+        // Handle the error
+      }
+    );
+  }
+
+  
   
 }

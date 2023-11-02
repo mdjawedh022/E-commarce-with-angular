@@ -24,10 +24,10 @@
     },
     {
       "id": 3,
-      "image": "https://assets.ajio.com/medias/sys_master/root/20230908/rqBz/64faccbcafa4cf41f5d255f4/-473Wx593H-466549497-white-MODEL.jpg",
-      "name": "CLAFOUTIS",
-      "text": "Typographic Print V-Neck T-Shirt",
-      "price": 510,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230831/482v/64f0a8bfafa4cf41f59b1d50/-473Wx593H-442111596-black-MODEL.jpg",
+      "name": "GAP",
+      "text": "Regular Fit Cotton Crew-Neck T-Shirt",
+      "price": 512,
       "disc_price": 1499,
       "price_off": "66% OFF",
       "cat": "T-Shirt",
@@ -44,7 +44,6 @@
       "cat": "Jacket",
       "for": "men"
     },
-
     {
       "id": 5,
       "image": "https://assets.ajio.com/medias/sys_master/root/20231010/473a/65252731ddf77915192fcbd1/-473Wx593H-466691165-black-MODEL2.jpg",
@@ -209,7 +208,6 @@
       "cat": "Dupatta",
       "for": "women"
     },
-
     {
       "id": 20,
       "image": "https://assets.ajio.com/medias/sys_master/root/20221123/Line/637dbef6f997ddfdbd9298fc/-473Wx593H-441149930-teal-MODEL.jpg",
@@ -375,7 +373,6 @@
       "cat": "Hoodie",
       "for": "kids"
     },
-
     {
       "id": 35,
       "image": "https://assets.ajio.com/medias/sys_master/root/20230303/4Kjk/6401ce2faeb26924e3a2ee8b/-473Wx593H-443009859-pink-MODEL.jpg",
@@ -498,7 +495,6 @@
       "for": "kids"
     }
   ],
-
   "users": [
     {
       "id": 1,
@@ -513,8 +509,18 @@
       "password": "password2"
     }
   ],
-
-  "cart": [],
-
+  "cart": [
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230321/5zvc/6418f0f6aeb26924e3d6ea93/-473Wx593H-465699829-green-MODEL2.jpg",
+      "name": "EYEBOGLER",
+      "text": "Colourblock Half-Zip T-Shirt",
+      "price": 299,
+      "disc_price": 1299,
+      "price_off": "77% OFF",
+      "cat": "T-Shirt",
+      "for": "men"
+    }
+  ],
   "order": []
 }
