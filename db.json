@@ -495,7 +495,36 @@
       "for": "kids"
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "name": "jawed",
+      "email": "jawed@gmail.com",
+      "password": "123451",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "name": "kkk",
+      "email": "aaa@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 2
+    },
+    {
+      "name": "aa",
+      "email": "aag@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "id": 3
+    },
+    {
+      "name": "jj",
+      "email": "jj@gmail.com",
+      "password": "222222",
+      "confirmPassword": "222222",
+      "id": 4
+    }
+  ],
   "cart": [],
   "order": []
 }
