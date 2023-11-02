@@ -141,6 +141,7 @@
 .toggle h3 {
   cursor: pointer;
 }
+
 /* Media queries */
 @media screen and (max-width: 1050px) {
   .nav-links {

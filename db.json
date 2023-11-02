@@ -495,32 +495,7 @@
       "for": "kids"
     }
   ],
-  "users": [
-    {
-      "id": 1,
-      "username": "user1",
-      "email": "user1@example.com",
-      "password": "password1"
-    },
-    {
-      "id": 2,
-      "username": "user2",
-      "email": "user2@example.com",
-      "password": "password2"
-    }
-  ],
-  "cart": [
-    {
-      "id": 1,
-      "image": "https://assets.ajio.com/medias/sys_master/root/20230321/5zvc/6418f0f6aeb26924e3d6ea93/-473Wx593H-465699829-green-MODEL2.jpg",
-      "name": "EYEBOGLER",
-      "text": "Colourblock Half-Zip T-Shirt",
-      "price": 299,
-      "disc_price": 1299,
-      "price_off": "77% OFF",
-      "cat": "T-Shirt",
-      "for": "men"
-    }
-  ],
+  "users": [],
+  "cart": [],
   "order": []
 }

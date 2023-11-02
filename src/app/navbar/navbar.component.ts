@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -11,4 +11,6 @@ export class NavbarComponent {
   toggleMobileMenu() {
     this.isMobileMenuVisible = !this.isMobileMenuVisible;
   }
+ 
+
 }

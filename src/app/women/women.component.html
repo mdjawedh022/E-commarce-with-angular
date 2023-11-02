@@ -31,7 +31,7 @@
     <!-- ---------------------- -->
     <div class="product-container">
       <div *ngFor="let item of filteredData" class="product">
-        <div>
+        <div (click)="navigateToProductDetail(item.id)">
           <img [src]="item.image" alt="{{ item.name }}" />
         </div>
       <div class="product-info">
@@ -42,7 +42,7 @@
           <p class="dis_p">₹{{ item.disc_price }}</p>
           <p class="off">({{ item.price_off }})</p>
         </div>
-        <button type="button" class="btn btn-primary">Add to Cart</button>
+        <button type="button" class="btn btn-primary"  (click)="addToCart(item)">Add to Cart</button>
       </div>
       </div>
     </div>

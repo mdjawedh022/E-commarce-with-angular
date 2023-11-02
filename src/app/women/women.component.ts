@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { DataService } from '../data.service';
+import { Router } from '@angular/router';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-women',
@@ -33,7 +35,9 @@ export class WomenComponent {
   selectedCategories:Set<string>=new Set();
   selectedSort:string='lowToHighPrice';
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService,private router: Router,
+    private cartService: CartService,
+) {}
 
   ngOnInit() {
   this.loadData();
@@ -90,6 +94,27 @@ if(this.selectedSort==='lowToHighPrice'){
 }else if(this.selectedSort==='HighToLowDiscount'){
   this.filteredData.sort((a,b)=>b.disc_price-a.disc_price)
 }
+}
+
+// Navigate to the product detail page with the product ID as a parameter
+navigateToProductDetail(productId: number) {
+  this.router.navigate(['/product', productId]);
+}
+
+// add to cart
+addToCart(item: any) {
+  const data = item; // Replace with your data
+  this.cartService.postToCart(data).subscribe(
+    (response) => {
+      console.log('POST request successful', response);
+      alert('Item added to the cart!');
+      // Handle the response from the server
+    },
+    (error) => {
+      console.error('POST request failed', error);
+      // Handle the error
+    }
+  );
 }
 
 }

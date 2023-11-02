@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../data.service';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-details',
@@ -23,7 +24,9 @@ export class DetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private dataService: DataService
+    private dataService: DataService,
+    private cartService:CartService,
+    private router: Router,
   ) {}
 
   ngOnInit() {
@@ -35,4 +38,25 @@ export class DetailsComponent implements OnInit {
       });
     });
   }
+
+
+  addToCart(item: any) {
+    const data = item; // Replace with your data
+    this.cartService.postToCart(data).subscribe(
+      (response) => {
+        console.log('POST request successful', response);
+        this.router.navigate(['/cart'])
+        alert('Item added to the cart!');
+       
+
+        // Handle the response from the server
+      },
+      (error) => {
+        console.error('POST request failed', error);
+        // Handle the error
+      }
+    );
+  }
+
+ 
 }
