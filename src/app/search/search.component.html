@@ -1,0 +1,16 @@
+<div class="parent-container">
+    <h1>Search Products</h1>
+    <div class="search-product-show" *ngFor="let item of searchResult">
+        <div class="img-search">
+            <img [src]="item.image" alt="">
+        </div>
+        <div class="search-text">
+            <h3>{{item.name}}</h3>
+            <p><strong>{{item.text}}</strong></p>
+            <p>₹{{item.price}} <span>₹{{item.disc_price}}</span></p>
+            <p>{{item.price_off}}</p>
+            <button>View to detail</button>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>

@@ -3,12 +3,12 @@
     <img src="assets/fashion.png" alt="Myntra Logo" />
   </a>
   <div class="search-bar">
-    <input type="text" placeholder="Search for products..." (keyup)="searchProduct($event)" (blur)="hide()"/>
+    <input #searchInput type="text" placeholder="Search for products..." (keyup)="searchProduct($event)" (blur)="hide()"/>
     
-    <button >Search</button>
+    <button (click)="submitSearch(searchInput.value)">Search</button>
     <ul class="suggest-result" *ngIf="searchResult">
       <li *ngFor="let item of searchResult">
-        <a >{{item.text}}</a>
+        <a  (mousedown)="submitSearch(item.text)">{{item.text}}</a>
       </li>
     </ul>
   </div>

@@ -20,15 +20,22 @@ export class NavbarComponent {
     if (query) {
       const elem = query.target as HTMLInputElement;
       this.dataService.searchProducts(elem.value).subscribe((result) => {
-        console.log(result);
+        // console.log(result);
      if(result.length>5){
       result.length=5
      }
-     this.searchResult = result;
+    if(result.length>0){
+      this.searchResult = result;
+    }
       });
     }
   }
   hide() {
     this.searchResult = undefined;
+  }
+  submitSearch(val:string){
+console.log(val);
+this.router.navigate([`search/${val}`])
+
   }
 }
