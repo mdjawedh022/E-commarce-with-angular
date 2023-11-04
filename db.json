@@ -525,6 +525,72 @@
       "id": 4
     }
   ],
-  "cart": [],
-  "order": []
+  "cart": [
+    {
+      "id": 13,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221107/dBC4/63691691aeb269659c758740/-473Wx593H-441149387-navy-MODEL5.jpg",
+      "name": "NETPLAY",
+      "text": "Checked Shirt with Patch Pocket",
+      "price": 390,
+      "disc_price": 1299,
+      "price_off": "70% OFF",
+      "cat": "Shirt",
+      "for": "men"
+    },
+    {
+      "id": 5,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231010/473a/65252731ddf77915192fcbd1/-473Wx593H-466691165-black-MODEL2.jpg",
+      "name": "URBAN BUCCACHI",
+      "text": "Men Relaxed Fit Shirt with Short Sleeves",
+      "price": 380,
+      "disc_price": 1999,
+      "price_off": "81% OFF",
+      "cat": "Shirt",
+      "for": "men"
+    }
+  ],
+  "order": [
+    {
+      "order": {
+        "firstName": "Md Jawed",
+        "lastName": "Hussain",
+        "mobile": "8271766683",
+        "email": "jawedh024@gmail.com",
+        "address": "darbhanga,Bihar",
+        "state": "Maharashtra",
+        "city": "",
+        "pincode": "401209",
+        "paymentMethod": "cash"
+      },
+      "id": 1
+    },
+    {
+      "order": {
+        "firstName": "Md Jawed",
+        "lastName": "Hussain",
+        "mobile": "8271766683",
+        "email": "jawedhilmand022@gmail.com",
+        "address": "www",
+        "state": "dyqg",
+        "city": "mumbai",
+        "pincode": "401209",
+        "paymentMethod": "cash"
+      },
+      "id": 2
+    },
+    {
+      "order": {
+        "firstName": "Md Jawed",
+        "lastName": "Hussain",
+        "mobile": "8271766683",
+        "email": "jawedhilmand022@gmail.com",
+        "address": "sdfwet35y",
+        "state": "dyqg",
+        "city": "mumbai",
+        "pincode": "401209",
+        "paymentMethod": "cash"
+      },
+      "id": 3
+    }
+  ]
 }

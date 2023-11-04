@@ -1,0 +1,14 @@
+.container{
+    margin-top: 10rem;
+    margin-bottom: 5rem
+    ;
+}
+.needs-validation input{
+    margin-top: 1rem;
+} 
+.needs-validation label{
+    margin-top: .9rem;
+} 
+.needs-validation button{
+    margin-top: .9rem;
+}

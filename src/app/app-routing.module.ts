@@ -9,6 +9,8 @@ import { SignupComponent } from './signup/signup.component';
 import { CartComponent } from './cart/cart.component';
 import { DetailsComponent } from './details/details.component';
 import { AuthGuard } from './auth.guard';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -17,8 +19,13 @@ const routes: Routes = [
   { path: 'kids', component: KidsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'cart', component: CartComponent,  canActivate: [AuthGuard]  },
-  { path: 'product/:id', component: DetailsComponent, canActivate: [AuthGuard]  },
+  { path: 'cart', component: CartComponent },
+  { path: 'product/:id', component: DetailsComponent },
+  // { path: 'cart', component: CartComponent,  canActivate: [AuthGuard]  },
+  // { path: 'product/:id', component: DetailsComponent, canActivate: [AuthGuard]  },
+  { path: 'checkout', component: CheckoutComponent },
+  {path: 'search/:query',  component: SearchComponent,
+  },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/' },
 ];

@@ -20,6 +20,7 @@ import { DetailsComponent } from './details/details.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderComponent } from './order/order.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { OrderComponent } from './order/order.component';
     CartComponent,
     DetailsComponent,
     CheckoutComponent,
-    OrderComponent
+    OrderComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

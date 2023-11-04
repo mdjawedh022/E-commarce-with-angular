@@ -141,7 +141,35 @@
 .toggle h3 {
   cursor: pointer;
 }
+.suggest-result{
+  position: absolute;
+  display: list-item !important;
+  z-index: 10px;
+  background-color:#fff;
+  border: 1px solid#ddd;
+  width: 300px;
+  color: #ddd;
+  top: 70px;
+  border-radius:0 0  5px 5px;
+  list-style: none;
+}
+.suggest-result li a{
+  font-size: 13px;
+  padding: 5px;
+  color: black;
+  cursor: pointer;
+  text-align: start;
+}
 
+.suggest-result li{
+  border-bottom: 1px solid#ddd;
+  padding: 5px 0;
+ 
+}
+.suggest-result li:hover{
+  background-color: #858484;
+  color: #fff;
+}
 /* Media queries */
 @media screen and (max-width: 1050px) {
   .nav-links {

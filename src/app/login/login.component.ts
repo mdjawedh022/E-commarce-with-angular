@@ -26,7 +26,7 @@ export class LoginComponent {
       (user: any) => {
         if (user) {
           alert("Login successful!");
-          this.router.navigate(['/'])
+          this.router.navigate(['/cart'])
           // Redirect or perform other actions for authenticated users
           console.log(user);
           

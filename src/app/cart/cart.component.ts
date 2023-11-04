@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CartService } from '../cart.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -22,7 +23,7 @@ export class CartComponent {
   totalProductPrice: number = 0;
   totalDiscountPrice: number = 0;
 
-  constructor(private cartService: CartService) { };
+  constructor(private cartService: CartService,private router:Router) { };
 
   ngOnInit() {
     this.showData()
@@ -69,17 +70,18 @@ export class CartComponent {
     this.totalDiscountPrice = discountPrice;
   }
 
-  checkout() {
-    if (this.cartData.length === 0) {
-      alert('Your cart is empty. Please add items before checking out.');
-    } else {
-      // Implement your checkout process here, e.g., send data to a server, redirect to a payment gateway, etc.
-
-      // For this example, we'll display the total price and clear the cart:
-      alert('Thank you for your order. Your total price is ₹' + (this.totalProductPrice - this.totalDiscountPrice));
-      this.cartData = [];
-      this.totalProductPrice = 0;
-      this.totalDiscountPrice = 0;
-    }
-  }
+  checkout() { 
+  //  this.cartService.cartDeleted().subscribe(
+  //   (Response)=>{
+      this.router.navigate(['/checkout']);
+  //   },
+  //   (error)=>{
+  //     console.log(error);
+      
+  //   }
+  //  )
+       
+      }
+   
 }
+ 

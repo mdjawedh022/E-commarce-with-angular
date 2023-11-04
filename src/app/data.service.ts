@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { product } from 'data-type';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -27,5 +28,12 @@ export class DataService {
 
   getAllProducts(){
     return this.http.get(`${this.baseUrl}/data`)
+  }
+
+  searchProducts(query:string){
+    return this.http.get<product[]>(`${this.baseUrl}/data?q=${query}`);
+  }
+  searchList(query:string){
+    return this.http.get<product[]>(`${this.baseUrl}/data?q=${query}`);
   }
 }

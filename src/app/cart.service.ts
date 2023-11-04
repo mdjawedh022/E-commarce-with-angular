@@ -21,4 +21,12 @@ export class CartService {
     const deleteUrl = `${this.baseUrl}/${itemId}`;
     return this.http.delete(deleteUrl);
   }
+
+cartDeleted(){
+  return this.http.delete(`${this.baseUrl}`)
 }
+  }
+  
+  
+  
+  
