@@ -38,28 +38,24 @@ export class DataService {
   }
 
   AddProduct(product: product) {
-    this.http
-      .post('http://localhost:3000/products', product)
-      .subscribe((val) => {
-        if (val) {
-          alert('Product added !.');
-        }
-      });
+    this.http.post(`${this.baseUrl}/data`, product).subscribe((val) => {
+      if (val) {
+        alert('Product added !.');
+      }
+    });
   }
   deleteProduct(id: number) {
-    return this.http.delete(`${this.baseUrl}/data${id}`);
+    return this.http.delete(`${this.baseUrl}/data/${id}`);
   }
-  getProduct(id: string) {
-    return this.http.get<product>(`http://localhost:3000/products/${id}`);
-  }
+
   getProducts() {
     return this.http.get<product[]>(`${this.baseUrl}/data`);
   }
+  getProduct(id: string) {
+    return this.http.get<product>(`${this.baseUrl}/data/${id}`);
+  }
   updateProduct(data: product) {
-    return this.http.put<product>(
-      `http://localhost:3000/products/${data.id}`,
-      data
-    );
+    return this.http.put<product>(`${this.baseUrl}/data/${data.id}`, data);
   }
 }
 

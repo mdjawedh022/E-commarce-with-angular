@@ -23,15 +23,15 @@
       "for": "men"
     },
     {
-      "id": 3,
-      "image": "https://assets.ajio.com/medias/sys_master/root/20230831/482v/64f0a8bfafa4cf41f59b1d50/-473Wx593H-442111596-black-MODEL.jpg",
       "name": "GAP",
       "text": "Regular Fit Cotton Crew-Neck T-Shirt",
-      "price": 512,
-      "disc_price": 1499,
+      "price": "512",
+      "disc_price": "1499",
       "price_off": "66% OFF",
       "cat": "T-Shirt",
-      "for": "men"
+      "for": " Men",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221031/iU0S/635f6c07f997ddfdbd4ababe/-473Wx593H-441135949-white-MODEL5.jpg",
+      "id": 3
     },
     {
       "id": 4,

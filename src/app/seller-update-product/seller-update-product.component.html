@@ -1,1 +1,46 @@
-<p>seller-update-product works!</p>
+<div class="add-product">
+    <h1>Update Product</h1>
+    
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
+        <label>Product Name:</label>
+        <input type="text" ngModel="{{productData?.name}}" name="name">
+
+        <label>Product Description:</label>
+        <textarea ngModel="{{productData?.text}}" name="text"></textarea>
+
+        <label>Price:</label>
+        <input type="number" ngModel="{{productData?.price}}" name="price">
+
+        <label>Discount Price:</label>
+        <input type="number" ngModel="{{productData?.disc_price}}" name="disc_price">
+      
+         <label>Product Off:</label>
+        <input type="text" ngModel="{{productData?.price_off}}" name="price_off">
+
+         <label>Product Type:</label>
+        <input type="text" ngModel="{{productData?.cat}}" name="cat">
+
+
+        <label>Category:</label>
+        <select ngModel="{{productData?.for}}" name="for">
+             <option value=" Men">Men</option>
+      <option value="Women">Women</option>
+      <option value="Kids">Kids</option>
+        </select>
+
+        <label>Product Image Url:</label>
+        <input type="url" ngModel="{{productData?.image}}" name="image">
+
+        <button type="submit">Update</button>
+    </form>
+</div>
+
+ <!-- "id": 42,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231023/UmCu/65365f04ddf779151953978b/-473Wx593H-420436422-pink-MODEL.jpg",
+      "name": "ANTIX",
+      "text": "Printed Regular Fit Top & Pant Set",
+      "price": 165,
+      "disc_price": 549,
+      "price_off": "70% OFF",
+      "cat": "Pants",
+      "for": "kids" -->

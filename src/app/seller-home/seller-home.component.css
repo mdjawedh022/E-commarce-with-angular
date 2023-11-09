@@ -51,12 +51,14 @@
 }
 .product-card-div .cat{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   gap: 10px;
   text-align: center;
   align-items: center;
   margin: auto;
   color: gray;
+  border: none;
+  outline: none;
 }
 .product-card-div .cat strong{
   color: #000;

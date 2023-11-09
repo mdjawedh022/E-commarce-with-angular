@@ -32,4 +32,7 @@ export class SellerHomeComponent {
       this.productData = result;
     });
   }
+  updatrouter(id:number){
+    this.route.navigate(['/seller-update-product',id])
+  }
 }

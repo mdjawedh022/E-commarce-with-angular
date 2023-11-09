@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'seller', component: SellerComponent },
   { path: 'seller-home', component: SellerHomeComponent },
   { path: 'seller-add-product', component:SellerAddProductComponent  },
-  { path: 'seller-update-product', component: SellerUpdateProductComponent },
+  { path: 'seller-update-product/:id', component: SellerUpdateProductComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/' },
 ];

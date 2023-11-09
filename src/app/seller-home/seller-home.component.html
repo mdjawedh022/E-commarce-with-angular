@@ -17,7 +17,7 @@
 </div>
      <div class="btn">
        <button (click)="deleteItem(product.id)" class="btn btn-danger">Delete</button>
-      <button class="update btn btn-primary" routerLink="/seller-update-product/{{product.id}}">Update</button>
+      <button class="update btn btn-primary" (click)="updatrouter(product.id)">Update</button>
     
      </div>  </div>
     </div>
