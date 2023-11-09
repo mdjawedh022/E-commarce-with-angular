@@ -71,16 +71,8 @@ export class CartComponent {
   }
 
   checkout() { 
-  //  this.cartService.cartDeleted().subscribe(
-  //   (Response)=>{
       this.router.navigate(['/checkout']);
-  //   },
-  //   (error)=>{
-  //     console.log(error);
-      
-  //   }
-  //  )
-       
+
       }
    
 }

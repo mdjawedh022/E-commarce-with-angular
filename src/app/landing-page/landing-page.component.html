@@ -11,12 +11,15 @@
         only at FasionHub.</P
       >
       <div class="hero-input">
-        <input
-          type="text"
-          placeholder="Search for products...."
-          name=""
-          id=""
-        /><button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input #searchInput type="text" placeholder="Search for products..." (keyup)="searchProduct($event)" (blur)="hide()"/>
+    
+        <button (click)="submitSearch(searchInput.value)"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- <ul class="suggest-result" *ngIf="searchResult">
+          <li *ngFor="let item of searchResult">
+            <a  (mousedown)="submitSearch(item.text)">{{item.text}}</a>
+          </li>
+        </ul> -->
+      
       </div>
     </div>
   </div>

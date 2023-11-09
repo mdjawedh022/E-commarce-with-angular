@@ -523,30 +523,25 @@
       "password": "222222",
       "confirmPassword": "222222",
       "id": 4
+    },
+    {
+      "name": "Aris",
+      "email": "aris@gmail.com",
+      "password": "1111",
+      "id": 5
     }
   ],
   "cart": [
     {
-      "id": 13,
-      "image": "https://assets.ajio.com/medias/sys_master/root/20221107/dBC4/63691691aeb269659c758740/-473Wx593H-441149387-navy-MODEL5.jpg",
-      "name": "NETPLAY",
-      "text": "Checked Shirt with Patch Pocket",
-      "price": 390,
-      "disc_price": 1299,
+      "id": 42,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231023/UmCu/65365f04ddf779151953978b/-473Wx593H-420436422-pink-MODEL.jpg",
+      "name": "ANTIX",
+      "text": "Printed Regular Fit Top & Pant Set",
+      "price": 165,
+      "disc_price": 549,
       "price_off": "70% OFF",
-      "cat": "Shirt",
-      "for": "men"
-    },
-    {
-      "id": 5,
-      "image": "https://assets.ajio.com/medias/sys_master/root/20231010/473a/65252731ddf77915192fcbd1/-473Wx593H-466691165-black-MODEL2.jpg",
-      "name": "URBAN BUCCACHI",
-      "text": "Men Relaxed Fit Shirt with Short Sleeves",
-      "price": 380,
-      "disc_price": 1999,
-      "price_off": "81% OFF",
-      "cat": "Shirt",
-      "for": "men"
+      "cat": "Pants",
+      "for": "kids"
     }
   ],
   "order": [

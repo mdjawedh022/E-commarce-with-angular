@@ -1,0 +1,59 @@
+<!-- <nav class="navbar">
+  <a routerLink="/" class="logo">
+    <img src="assets/fashion.png" alt="Myntra Logo" />
+  </a>
+  <div class="search-bar">
+    <input #searchInput type="text" placeholder="Search for products..." (keyup)="searchProduct($event)" (blur)="hide()"/>
+    
+    <button (click)="submitSearch(searchInput.value)">Search</button>
+    <ul class="suggest-result" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a  (mousedown)="submitSearch(item.text)">{{item.text}}</a>
+      </li>
+    </ul>
+  </div>
+  
+
+
+  <ul class="nav-links">
+    <li><a routerLink="/men">Men</a></li>
+    <li><a routerLink="/women">Women</a></li>
+    <li><a routerLink="/kids">Kids</a></li>
+    <li>
+      <a routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+      ({{cartItemCount}})
+    </li>
+    <li>
+      <a routerLink="/login"><i class="fa-solid fa-right-to-bracket"></i></a>
+    </li>
+  </ul>
+
+  <div class="hamburger-menu" (click)="toggleMobileMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</nav>
+<div class="toggle" *ngIf="isMobileMenuVisible">
+  <div class="inner-toggle">
+    <div class="header-sidebar">
+      <div class="logo">
+        <img src="assets/fashion.png" alt="Myntra Logo" />
+      </div>
+      <h3 (click)="toggleMobileMenu()">X</h3>
+    </div>
+    <ul class="link-menu">
+      <li class="side-input"><input type="text" /><button>search</button></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i>  </a>
+
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+      </li>
+    </ul>
+  </div>
+</div> -->

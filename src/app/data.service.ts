@@ -4,14 +4,14 @@ import { product } from 'data-type';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
   getProductDetails(productId: string) {
     throw new Error('Method not implemented.');
   }
 
-  private baseUrl = `http://localhost:3000`; 
+  private baseUrl = `http://localhost:3000`;
 
   constructor(private http: HttpClient) {}
 
@@ -19,21 +19,47 @@ export class DataService {
     return this.http.get(`${this.baseUrl}/data?for=men`);
   }
 
-  getWomenData(){
+  getWomenData() {
     return this.http.get(`${this.baseUrl}/data?for=women`);
   }
-  getKidsData(){
+  getKidsData() {
     return this.http.get(`${this.baseUrl}/data?for=kids`);
   }
 
-  getAllProducts(){
-    return this.http.get(`${this.baseUrl}/data`)
+  getAllProducts() {
+    return this.http.get(`${this.baseUrl}/data`);
   }
 
-  searchProducts(query:string){
+  searchProducts(query: string) {
     return this.http.get<product[]>(`${this.baseUrl}/data?q=${query}`);
   }
-  searchList(query:string){
+  searchList(query: string) {
     return this.http.get<product[]>(`${this.baseUrl}/data?q=${query}`);
+  }
+
+  AddProduct(product: product) {
+    this.http
+      .post('http://localhost:3000/products', product)
+      .subscribe((val) => {
+        if (val) {
+          alert('Product added !.');
+        }
+      });
+  }
+  deleteProduct(id: number) {
+    return this.http.delete(`${this.baseUrl}/data${id}`);
+  }
+  getProduct(id: string) {
+    return this.http.get<product>(`http://localhost:3000/products/${id}`);
+  }
+  getProducts() {
+    return this.http.get<product[]>(`${this.baseUrl}/data`);
+  }
+  updateProduct(data: product) {
+    return this.http.put<product>(
+      `http://localhost:3000/products/${data.id}`,
+      data
+    );
   }
 }
+

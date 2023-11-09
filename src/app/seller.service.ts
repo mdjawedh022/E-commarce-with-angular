@@ -7,43 +7,42 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class SellerService {
   isLoggedIn = new BehaviorSubject<boolean>(false);
+
   constructor(private http: HttpClient, private route: Router) {}
 
   SignUp(data: signUp) {
     this.http
-      .post('http://localhost:3000/users', data, { observe: 'response' })
+      .post('http://localhost:3000/seller', data, { observe: 'response' })
       .subscribe((result) => {
         if (result) {
           this.isLoggedIn.next(true);
-          localStorage.setItem('user', JSON.stringify(result.body));
-          this.route.navigate(['/']);
+          localStorage.setItem('seller', JSON.stringify(result.body));
+          this.route.navigate(['admin']);
         }
       });
   }
-  // ----------data get form localStorage-----------
   reloadSeller() {
-    if (localStorage.getItem('user')) {
+    if (localStorage.getItem('seller')) {
       this.isLoggedIn.next(true);
-      this.route.navigate(['/']);
+      this.route.navigate(['admin']);
     }
   }
-  //  -----------login------------
 
   Login(data: Login) {
     this.http
       .get(
-        `http://localhost:3000/users/?email=${data.email}&password=${data.password}`,
+        `http://localhost:3000/seller/?email=${data.email}&password=${data.password}`,
         { observe: 'response' }
       )
       .subscribe((result: any) => {
         if (result && result.body && result.body.length) {
           this.isLoggedIn.next(true);
-          localStorage.setItem('user', JSON.stringify(result.body[0]));
-          this.route.navigate(['/']);
+          localStorage.setItem('seller', JSON.stringify(result.body[0]));
+          this.route.navigate(['admin']);
         } else {
-          alert('Login Failed !');
+          alert('Login failed !.');
         }
       });
   }

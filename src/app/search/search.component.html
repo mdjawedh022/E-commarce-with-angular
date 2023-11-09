@@ -9,8 +9,8 @@
             <p><strong>{{item.text}}</strong></p>
             <p>₹{{item.price}} <span>₹{{item.disc_price}}</span></p>
             <p>{{item.price_off}}</p>
-            <button>View to detail</button>
-            <button>Add to Cart</button>
+            <button (click)="navigateToProductDetail(item.id)">View to detail</button>
+            <button (click)="addToCart(item)">Add to Cart</button>
         </div>
     </div>
 </div>

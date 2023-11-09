@@ -5,9 +5,20 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CartService {
+  [x: string]: any;
   private baseUrl = `http://localhost:3000/cart`;
   addToCart: any;
-
+cartData: Array<{
+    id: number,
+    image: string,
+    name: string,
+    text: string,
+    price: number,
+    disc_price: number,
+    price_off: number,
+    cat: string,
+    for: string
+  }> = [];
   constructor(private http: HttpClient) {}
 
   // Method to send data to the server using POST
@@ -16,6 +27,13 @@ export class CartService {
   }
   getCartData() {
     return this.http.get(`${this.baseUrl}`);
+
+  }
+
+  getData(){
+    this.http.get(`${this.baseUrl}`).subscribe((data:any)=>{
+
+    })
   }
   deleteCartItem(itemId: number) {
     const deleteUrl = `${this.baseUrl}/${itemId}`;
