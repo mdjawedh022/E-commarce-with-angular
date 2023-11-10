@@ -8,7 +8,7 @@
             <h3>{{item.name}}</h3>
             <p><strong>{{item.text}}</strong></p>
             <p>₹{{item.price}} <span>₹{{item.disc_price}}</span></p>
-            <p>{{item.price_off}}</p>
+            <p class="off">({{item.price_off}})</p>
             <button (click)="navigateToProductDetail(item.id)">View to detail</button>
             <button (click)="addToCart(item)">Add to Cart</button>
         </div>

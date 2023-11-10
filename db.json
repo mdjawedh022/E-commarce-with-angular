@@ -529,6 +529,12 @@
       "email": "aris@gmail.com",
       "password": "1111",
       "id": 5
+    },
+    {
+      "name": "jawed",
+      "email": "jawedhilmand022@gmail.com",
+      "password": "2222",
+      "id": 6
     }
   ],
   "cart": [
@@ -542,6 +548,28 @@
       "price_off": "70% OFF",
       "cat": "Pants",
       "for": "kids"
+    },
+    {
+      "id": 5,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231010/473a/65252731ddf77915192fcbd1/-473Wx593H-466691165-black-MODEL2.jpg",
+      "name": "URBAN BUCCACHI",
+      "text": "Men Relaxed Fit Shirt with Short Sleeves",
+      "price": 380,
+      "disc_price": 1999,
+      "price_off": "81% OFF",
+      "cat": "Shirt",
+      "for": "men"
+    },
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230321/5zvc/6418f0f6aeb26924e3d6ea93/-473Wx593H-465699829-green-MODEL2.jpg",
+      "name": "EYEBOGLER",
+      "text": "Colourblock Half-Zip T-Shirt",
+      "price": 299,
+      "disc_price": 1299,
+      "price_off": "77% OFF",
+      "cat": "T-Shirt",
+      "for": "men"
     }
   ],
   "order": [
