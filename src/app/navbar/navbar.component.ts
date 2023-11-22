@@ -74,4 +74,9 @@ export class NavbarComponent implements OnInit {
     this.router.navigate([`search/${val}`]);
  
   }
+
+  closeFuncHamber(){
+    this.logOut();
+    this.isHamburger = false;
+  }
 }

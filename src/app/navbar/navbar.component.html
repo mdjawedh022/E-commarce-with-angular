@@ -1,10 +1,6 @@
-
-
 <nav class="nav">
-  <div class="nav-title">
-    <h1 *ngIf="menuType === 'seller' || menuType === 'user'">
-      😊Welcome {{ sellerName | titlecase }}{{ userName | titlecase }}
-    </h1>
+  <div class="nav-title" *ngIf="menuType === 'seller' || menuType === 'user'">
+    <h1>😊Welcome {{ sellerName | titlecase }}{{ userName | titlecase }}</h1>
   </div>
   <div class="navbar" [ngSwitch]="menuType">
     <a routerLink="/" class="logo-head">
@@ -41,8 +37,8 @@
     </ul>
 
     <ul *ngSwitchCase="'seller'" class="nav-link">
-      <li><a routerLink="">Add Product</a></li>
-      <li><a routerLink="">Product List</a></li>
+      <li><a routerLink="seller-add-product">Add Product</a></li>
+      <li><a routerLink="seller-home">Product List</a></li>
       <li><a (click)="logOut()">Logout</a></li>
     </ul>
 
@@ -54,16 +50,16 @@
         <a routerLink="cart"><i class="fa-solid fa-cart-shopping"></i></a>
       </li>
       <li class="menu-link">
-        <a class="user" (click)="logOut()" ><i class="fa-solid fa-user"></i></a>
+        <a class="user" (click)="logOut()"><i class="fa-solid fa-user"></i></a>
       </li>
       <li (click)="toggleMenu()" class="hamburger">
-        <a href=""><i class="fa-solid fa-bars"></i></a>
+        <i class="fa-solid fa-bars"></i>
       </li>
-      
     </ul>
     <!-- </div> -->
   </div>
 </nav>
+<!-- ------searchhing----------- -->
 <div class="nav-search" *ngIf="isMobileMenuVisible">
   <div class="inner-toggle">
     <h2 class="close" (click)="toggleMobileMenu()">
@@ -79,7 +75,7 @@
         (blur)="hide()"
       />
 
-      <button   (click)="submitSearch(searchInput.value)" >Search</button>
+      <button (click)="submitSearch(searchInput.value)">Search</button>
       <ul class="suggest-result" *ngIf="searchResult">
         <li *ngFor="let item of searchResult">
           <a (mousedown)="submitSearch(item.text)">{{ item.text }}</a>
@@ -99,14 +95,26 @@
       <h3 (click)="toggleMenu()">X</h3>
     </div>
     <ul class="link-menu1">
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">Kids</a></li>
+      <li><a routerLink="men" (click)="toggleMenu()">Men</a></li>
+      <li><a routerLink="women" (click)="toggleMenu()">Women</a></li>
+      <li><a routerLink="kids" (click)="toggleMenu()">Kids</a></li>
       <li>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+        <a routerLink="cart" (click)="toggleMenu()"
+          ><i class="fa-solid fa-cart-shopping"></i>
+        </a>
       </li>
-      <li>
-        <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+      <li (click)="toggleMenu()">
+        <a routerLink="seller"><i class="fa-solid fa-lock"></i></a>
+      </li>
+      <li *ngIf="menuType === 'default'">
+        <a routerLink="user" (click)="toggleMenu()"
+          ><i class="fa-solid fa-right-to-bracket"></i
+        ></a>
+      </li>
+      <li *ngIf="menuType === 'user'">
+        <a class="user" (click)="closeFuncHamber()"
+          ><i class="fa-solid fa-user"></i
+        ></a>
       </li>
     </ul>
   </div>

@@ -3,6 +3,7 @@ import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 import { CartService } from '../cart.service';
 import { Observable } from 'rxjs';
+import { product } from 'data-type';
 
 
 @Component({
@@ -11,32 +12,15 @@ import { Observable } from 'rxjs';
   styleUrls: ['./mens.component.css'],
 })
 export class MensComponent implements OnInit {
-  menData: Array<{
-    id: number;
-    image: string;
-    name: string;
-    text: string;
-    price: number;
-    disc_price: number;
-    price_off: number;
-    cat: string;
-    for: string;
-  }> = [];
-  filteredData: Array<{
-    id: number;
-    image: string;
-    name: string;
-    text: string;
-    price: number;
-    disc_price: number;
-    price_off: number;
-    cat: string;
-    for: string;
-  }> = [];
+  menData:product[] = [];
+  filteredData: product[] = [];
   selectedCategories: Set<string> = new Set();
-
   selectedSort: string = 'lowToHighPrice';
+  isSidebar=false;
 
+  openClosehamber(){
+this.isSidebar = !this.isSidebar;
+  }
   constructor(
     private dataService: DataService,
     private router: Router,

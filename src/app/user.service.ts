@@ -13,7 +13,9 @@ export class UserService {
 
   SignUp(data: signUp) {
     this.http
-      .post('http://localhost:3000/users', data, { observe: 'response' })
+      .post('https://weak-bat-sheath-dress.cyclic.app/users', data, {
+        observe: 'response',
+      })
       .subscribe((result) => {
         if (result) {
           this.isLoggedIn.next(true);
@@ -34,7 +36,7 @@ export class UserService {
   Login(data: Login) {
     this.http
       .get(
-        `http://localhost:3000/users/?email=${data.email}&password=${data.password}`,
+        `https://weak-bat-sheath-dress.cyclic.app/users/?email=${data.email}&password=${data.password}`,
         { observe: 'response' }
       )
       .subscribe((result: any) => {

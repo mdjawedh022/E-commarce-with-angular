@@ -127,6 +127,13 @@
 .inner-toggle .link-menu1 a {
   font-weight: 500;
   font-size: 1.5rem;
+ 
+}
+.link-menu1 a {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
 }
 .header-sidebar {
   display: flex;

@@ -1,5 +1,6 @@
 
 <div class="main">
+ 
   <div class="sidebar">
     <h2>Filter by</h2>
     <hr>
@@ -31,6 +32,8 @@
     </ul>
   </div>
   <!-- ---------------------- -->
+  <div class="product-wrapper">
+    <div class="dot"><i (click)="openClosehamber()" class="fa-solid fa-lines-leaning"></i><span>filter</span></div>
   <div class="product-container">
     <div *ngFor="let item of filteredData" class="product" >
       <div (click)="navigateToProductDetail(item.id)">
@@ -49,3 +52,44 @@
     </div>
   </div>
 </div>
+</div>
+ <div class="sidebar-responsive" *ngIf="isSidebar">
+  
+<div class="sidebar-wrapper-resp">
+   <div class="sidebar-header">
+      <div class="logo">
+        <img src="assets/fashion.png" alt="Myntra Logo" />
+      </div>
+      <h3 (click)="openClosehamber()" >X</h3>
+    </div>
+    <hr>
+        <h2>Filter by</h2>
+    <hr>
+    <ul>
+      
+      <li><input type="checkbox" (change)="toggleCategoryFilter('All')"     [checked]="isCategorySelected('All')" > <span>All</span> </li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('Shirt')"   [checked]="isCategorySelected('Shirt')"  /> <span>Shirt</span></li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('T-Shirt')" [checked]="isCategorySelected('T-Shirt')" /> <span>T-Shirt</span></li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('Trousers')" [checked]="isCategorySelected('Trousers')"/> <span>Trousers</span></li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('Jeans')" [checked]="isCategorySelected('Jeans')"/> <span>Jeans</span></li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('Jacket')" [checked]="isCategorySelected('Jacket')"/> <span>Jacket</span></li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('Pants')" [checked]="isCategorySelected('Pants')"/> <span>Pants</span></li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('Hoodie')" [checked]="isCategorySelected('Hoodie')"/> <span>Hoodie</span></li>
+      <li><input type="checkbox" (change)="toggleCategoryFilter('Sweatshirt')" [checked]="isCategorySelected('Sweatshirt')"/> <span>Sweatshirt</span></li>
+    </ul>
+    <hr />
+    <h2>Sort by Price</h2>
+    <hr>
+    <ul>
+      <li><input type="radio" name="sortOption" [(ngModel)]="selectedSort" value="lowToHighPrice" (change)="sortProducts()"/> Low To High</li>
+      <li><input type="radio" name="sortOption" [(ngModel)]="selectedSort" value="highToLowPrice" (change)="sortProducts()"/> High To Low</li>
+    </ul>
+    <hr />
+    <h2>Sort by Best Discount</h2>
+    <hr>
+    <ul>
+      <li><input type="radio" name="sortOption" [(ngModel)]="selectedSort" value="lowToHighDiscount" (change)="sortProducts()"/> Low To High</li>
+      <li> <input type="radio" name="sortOption" [(ngModel)]="selectedSort" value="highToLowDiscount" (change)="sortProducts()"/> High To Low</li>
+    </ul>
+</div>
+  </div>

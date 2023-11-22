@@ -20,26 +20,36 @@ const routes: Routes = [
   { path: 'men', component: MensComponent },
   { path: 'women', component: WomenComponent },
   { path: 'kids', component: KidsComponent },
-  { path: 'cart', component: CartComponent, canActivate: [authGuard] },
+
   { path: 'product/:id', component: DetailsComponent },
   { path: 'user', component: UserComponent },
-  { path: 'checkout', component: CheckoutComponent, canActivate: [authGuard] },
+
   { path: 'search/:query', component: SearchComponent },
   { path: 'seller', component: SellerComponent },
   {
+    path: 'cart',
+    component: CartComponent,
+    //  canActivate: [autahGuard]
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent,
+    // canActivate: [authGuard]
+  },
+  {
     path: 'seller-home',
     component: SellerHomeComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
   {
     path: 'seller-add-product',
     component: SellerAddProductComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
   {
     path: 'seller-update-product/:id',
     component: SellerUpdateProductComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '**', redirectTo: '/' },
